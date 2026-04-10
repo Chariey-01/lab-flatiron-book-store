@@ -49,6 +49,7 @@ const bookStoreTitle = document.querySelector("#header")
 bookStoreTitle.textContent = bookStore.name
 
 const bookList = document.querySelector("#book-list")
+
 bookStore.books.forEach((book) => {
 
     const bookContainer = document.createElement("li")
@@ -66,3 +67,5 @@ bookStore.books.forEach((book) => {
 
     bookList.append(bookContainer)
 })
+const deleteElement = document.querySelector("#delete-this")
+deleteElement.remove()
